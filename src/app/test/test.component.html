@@ -1,0 +1,8 @@
+<ul>
+  <li *ngFor="let cereal of cereals; let first = first; let last = last"
+  [ngClass]= "{underline:first,line:last}">
+   <h2>
+    {{cereal.name}} 
+   </h2> 
+  </li>
+</ul>
